@@ -2,23 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('stock-market.jpg');
+    background-image: url('stock-market.jpg'); /* Hình nền */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    position: relative;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen mờ */
-    z-index: 1; /* Đặt lớp phủ dưới nội dung */
 }
 
 .container {
