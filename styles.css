@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('stock-market.jpg'); /* Thay đổi màu nền thành hình nền */
+    background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ màn hình */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    color: white; /* Thay đổi màu chữ để dễ đọc hơn */
 }
 
 header {
