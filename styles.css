@@ -2,22 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('stock-market.jpg'); /* Thay đổi màu nền thành hình nền */
-    background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ màn hình */
-    background-position: center; /* Căn giữa ảnh */
-    background-repeat: no-repeat; /* Không lặp lại ảnh */
-    color: white; /* Thay đổi màu chữ để dễ đọc hơn */
+    background-image: url('stock-market.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 header {
-    background-color: #007acc;
+    background-color: rgba(0, 122, 204, 0.8);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 h1, h2 {
-    color: #333;
+    color: #fff;
 }
 
 main {
@@ -25,18 +31,17 @@ main {
 }
 
 section {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9); /* Nền trắng trong suốt */
     border-radius: 5px;
     margin: 10px 0;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #007acc;
+    background-color: rgba(0, 122, 204, 0.8);
     color: white;
     position: relative;
     bottom: 0;
