@@ -35,19 +35,27 @@ h2 {
     color: #fff; /* Màu chữ cho tiêu đề phụ */
 }
 
+nav {
+    background-color: rgba(144, 238, 144, 0.8); /* Màu nền thanh điều hướng */
+    padding: 10px; /* Khoảng cách bên trong thanh */
+    border-radius: 5px; /* Bo góc */
+}
+
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Không hiển thị dấu đầu dòng */
     padding: 0;
+    margin: 0;
+    display: flex; /* Sắp xếp theo hàng ngang */
+    justify-content: center; /* Căn giữa các mục */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 15px; /* Khoảng cách giữa các mục */
 }
 
 nav ul li a {
-    color: white; /* Hoặc màu khác theo thiết kế */
-    text-decoration: none;
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Bỏ gạch chân */
 }
 
 nav ul li a:hover {
