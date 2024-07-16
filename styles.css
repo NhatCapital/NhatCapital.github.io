@@ -27,8 +27,9 @@ body::before {
     margin: 0 auto;
     padding: 20px;
     z-index: 2; /* Đặt nội dung trên lớp phủ */
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
 }
-
 
 header {
     background-color: rgba(144, 238, 144, 0.8); /* Xanh lá cây nhạt */
@@ -37,19 +38,13 @@ header {
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #fff;
-}
-
 h1 {
     color: purple; /* Màu tím */
     font-size: 2.5em; /* Phóng to chữ */
+}
+
+h2 {
+    color: #fff; /* Màu chữ cho tiêu đề phụ */
 }
 
 main {
@@ -57,7 +52,7 @@ main {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.9); /* Nền trắng trong suốt */
+    background-color: rgba(144, 238, 144, 0.3); /* Xanh lá nhạt */
     border-radius: 5px;
     margin: 10px 0;
     padding: 15px;
