@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('stock-market.jpg'); /* Hình nền */
@@ -10,35 +10,38 @@ body {
 }
 
 .container {
-    position: relative; /* Đảm bảo nội dung nằm trên lớp phủ */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    z-index: 2; /* Đặt nội dung trên lớp phủ */
-    display: flex;
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 header {
-    background-color: rgba(144, 238, 144, 0.8); /* Xanh lá cây nhạt */
+    background-color: rgba(0, 51, 102, 0.8); /* Màu xanh đậm */
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: purple; /* Màu tím */
-    font-size: 2.5em; /* Phóng to chữ */
+    color: #fff; /* Màu trắng */
+    font-size: 3em; /* Phóng to chữ */
+    margin: 0;
 }
 
 h2 {
     color: #fff; /* Màu chữ cho tiêu đề phụ */
+    margin-bottom: 10px;
 }
 
 nav {
-    background-color: rgba(144, 238, 144, 0.8); /* Màu nền thanh điều hướng */
+    background-color: rgba(0, 51, 102, 0.8); /* Màu nền thanh điều hướng */
     padding: 10px; /* Khoảng cách bên trong thanh */
     border-radius: 5px; /* Bo góc */
+    margin-top: 20px;
 }
 
 nav ul {
@@ -56,6 +59,7 @@ nav ul li {
 nav ul li a {
     color: white; /* Màu chữ */
     text-decoration: none; /* Bỏ gạch chân */
+    font-weight: 600; /* Chữ đậm */
 }
 
 nav ul li a:hover {
@@ -67,15 +71,17 @@ main {
 }
 
 section {
-    background-color: rgba(144, 238, 144, 0.3); /* Xanh lá nhạt */
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
     border-radius: 5px;
     margin: 10px 0;
     padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Hiệu ứng làm mờ nền */
+    color: black; /* Màu chữ cho nội dung */
 }
 
 footer {
-    background-color: rgba(144, 238, 144, 0.8); /* Xanh lá cây nhạt */
+    background-color: rgba(0, 51, 102, 0.8); /* Màu xanh đậm */
     color: white;
     text-align: center;
     padding: 10px;
